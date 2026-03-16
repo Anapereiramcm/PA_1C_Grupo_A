@@ -1,0 +1,402 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNttDEXLF8eU1GxamZs2CQY",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Anapereiramcm/PA_1C_Grupo_A/blob/main/V%C3%A1rios%20c%C3%B3digos%20q%20eu%20n%20entendi\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 17,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "hKOy8LeOg1o5",
+        "outputId": "c217e4ae-2e05-43e6-88f8-3b1e84a41f2f"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "digite o comprimento: 89\n",
+            "digite o valor da largura: 90\n",
+            "------------------ÁREA DO RETÂNGULO------------------\n",
+            "\n",
+            "A área total do retângulo é igual a 8010.0\n",
+            "\n",
+            "---------------------------------------------------\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Entrada\n",
+        "\n",
+        "comprimento = float (input(\"digite o comprimento: \"))\n",
+        "largura = float (input (\"digite o valor da largura: \"))\n",
+        "\n",
+        "#PRocessamento\n",
+        "\n",
+        "area = comprimento * largura\n",
+        "\n",
+        "#Saída\n",
+        "\n",
+        "print(\"------------------ÁREA DO RETÂNGULO------------------\")\n",
+        "print (\"\")\n",
+        "print (f\"A área total do retângulo é igual a {area}\")\n",
+        "print (\"\")\n",
+        "print (\"---------------------------------------------------\")"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#Fazer um cadastro de usuário simples.\n",
+        "#Entrada: nome e idade\n",
+        "\n",
+        "#Processamento : armazenar os dados.\n",
+        "\n",
+        "#Saída : Mensagem de boas vindas.\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "7UjyrXaRkmz5"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Entrada\n",
+        "\n",
+        "nome = str (input (\"digite seu nome: \"))\n",
+        "print(\"\")\n",
+        "idade = int (input (\"digite sua idade: \"))\n",
+        "\n",
+        "#saída\n",
+        "\n",
+        "print(\"\")\n",
+        "print(f\"Olá {nome}! Seja bem vindo(a) \")\n",
+        "print (\"\")\n",
+        "print (\"\")\n",
+        "print(f\"Você tem {idade} anos de vida, correto?\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "zLX8CtSzjKJw",
+        "outputId": "08c7a9d4-b0ab-427b-ec03-a911b2067ecd"
+      },
+      "execution_count": 43,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "digite seu nome: Ivan\n",
+            "\n",
+            "digite sua idade: 22\n",
+            "\n",
+            "Olá Ivan! Seja bem vindo(a) \n",
+            "\n",
+            "\n",
+            "Você tem 22 anos de vida, correto?\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Fazer um programa que converte a temperatura de celcius fahrenheint\n",
+        "\n",
+        "#Entrada: graus celcius\n",
+        "\n",
+        "#processamento: converte a temperatura para fahrenheit\n",
+        "\n",
+        "#Saída: Mostrar a temperatura em  Fahrenheit\n",
+        "\n",
+        "F = (C * 9/5) + 32"
+      ],
+      "metadata": {
+        "id": "MMvx2ibDksbC"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Entrada\n",
+        "\n",
+        "C = int (input (\"Digite a temperatura em graus celcius:  \"))\n",
+        "print(\"\")\n",
+        "print (f\"Convertendo para Fahrenheit...\")\n",
+        "# Processamento\n",
+        "\n",
+        "F = int (C * 9/5)\n",
+        "Result = int (F + 32)\n",
+        "\n",
+        "# Saída\n",
+        "\n",
+        "print(\"\")\n",
+        "print(\"--------------------------------------------------\")\n",
+        "print(f\"     A temperatura, em Fahrenheit, será {Result} °F. \")\n",
+        "print(\"--------------------------------------------------\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "F76-cvmpmnN0",
+        "outputId": "84c14317-44d0-4db6-9972-b3f22c3317b2"
+      },
+      "execution_count": 60,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite a temperatura em graus celcius:  8970\n",
+            "\n",
+            "Convertendo para Fahrenheit...\n",
+            "\n",
+            "--------------------------------------------------\n",
+            "     A temperatura, em Fahrenheit, será 16178 °F. \n",
+            "--------------------------------------------------\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Operadores Aritméticos\n",
+        "\n",
+        "Soma de dois números\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "Am44BK5ov9n9"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Entrada\n",
+        "\n",
+        "print(\"\")\n",
+        "print(\"-------------------------------------------\")\n",
+        "a = int (input(\"| Digite o primeiro número:  \"))\n",
+        "b = int (input(\"| Digite o segundo número:  \"))\n",
+        "print(\"-------------------------------------------\")\n",
+        "print(\"\")\n",
+        "\n",
+        "#Processamento (soma de dois números)\n",
+        "\n",
+        "soma = a + b\n",
+        "subtração = a - b\n",
+        "multiplica = a * b\n",
+        "divida = a / b\n",
+        "div_int = a // b\n",
+        "resto = a % b #resto da divisão\n",
+        "\n",
+        "#Saída\n",
+        "print(\"_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_\")\n",
+        "print(\"--------------------SOMA------------------\")\n",
+        "print(\"\")\n",
+        "print(\"\")\n",
+        "print(\"\")\n",
+        "print(f\"A soma de {a} + {b} será igual a {soma}\")\n",
+        "print(\"\")\n",
+        "print(\"\")\n",
+        "print(\"\")\n",
+        "print(\"-------------------SUBTRAÇÃO--------------\")\n",
+        "print(\"\")\n",
+        "print(f\"A subtração de {a} - {b} será igual a {subtração}\")\n",
+        "print(\"\")\n",
+        "print(\"\")\n",
+        "print(\"\")\n",
+        "print(\"-----------------MULTIPLICAÇÃO------------\")\n",
+        "print(\"\")\n",
+        "print(f\"A multiplicação de {a} x {b} será igual a {multiplica}\")\n",
+        "print(\"\")\n",
+        "print(\"\")\n",
+        "print(\"--------------------DIVISÃO---------------\")\n",
+        "print(\"\")\n",
+        "print(f\"A divisão de {a} dividido por {b} será igual a {divida}\")\n",
+        "print(\"\")\n",
+        "print(\"\")\n",
+        "print(f\"A divisão, em forma de número inteiro, de {a} dividido por {b} será igual a {div_int}\")\n",
+        "print(\"\")\n",
+        "print(\"-------------------RESTO------------------\")\n",
+        "print(\"\")\n",
+        "print(\"\")\n",
+        "print(\"\")\n",
+        "print(f\"Resto de {a} dividido por {b} será igual a {resto}\")\n",
+        "print(\"\")\n",
+        "print(\"------------------------------------------\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6ZT8TH1DwMOf",
+        "outputId": "01ccb9dc-3de7-4c72-d67b-8ab6fd70e780"
+      },
+      "execution_count": 81,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\n",
+            "-------------------------------------------\n",
+            "| Digite o primeiro número:  5\n",
+            "| Digite o segundo número:  3\n",
+            "-------------------------------------------\n",
+            "\n",
+            "_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_\n",
+            "--------------------SOMA------------------\n",
+            "\n",
+            "\n",
+            "\n",
+            "A soma de 5 + 3 será igual a 8\n",
+            "\n",
+            "\n",
+            "\n",
+            "-------------------SUBTRAÇÃO--------------\n",
+            "\n",
+            "A subtração de 5 - 3 será igual a 2\n",
+            "\n",
+            "\n",
+            "\n",
+            "-----------------MULTIPLICAÇÃO------------\n",
+            "\n",
+            "A multiplicação de 5 x 3 será igual a 15\n",
+            "\n",
+            "\n",
+            "--------------------DIVISÃO---------------\n",
+            "\n",
+            "A divisão de 5 dividido por 3 será igual a 1.6666666666666667\n",
+            "\n",
+            "\n",
+            "A divisão, em forma de número inteiro, de 5 dividido por 3 será igual a 1\n",
+            "\n",
+            "-------------------RESTO------------------\n",
+            "\n",
+            "\n",
+            "\n",
+            "Resto de 5 dividido por 3 será igual a 2\n",
+            "\n",
+            "------------------------------------------\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Entrada\n",
+        "print(\"________________________________\")\n",
+        "print(\"\")\n",
+        "num1 = int (input(\"Type a number:  \"))\n",
+        "print(\"\")\n",
+        "num2 = int (input(\"Type a new number:  \"))\n",
+        "print(\"\")\n",
+        "\n",
+        "\n",
+        "#Processamento\n",
+        "\n",
+        "igual = num1 == num2 #igual\n",
+        "diferente = num1 != num2 #diferente\n",
+        "maior = num1 > num2 #maior\n",
+        "menor = num1 < num2 #menor\n",
+        "maior_igual = num1 >=  num2 #menor ou igual\n",
+        "menor_igual = num1 <= num2 #maior ou igual\n",
+        "\n",
+        "#Saída\n",
+        "print(\"________________________________\")\n",
+        "print(\"\")\n",
+        "print(f\"Is {num1} equal to {num2}?\")\n",
+        "print(igual)\n",
+        "print(\"\")\n",
+        "print(f\"Is {num1} different than {num2}?\")\n",
+        "print(diferente)\n",
+        "print(\"\")\n",
+        "print(f\"Is {num1} bigger than {num2}?\")\n",
+        "print(maior)\n",
+        "print(\"\")\n",
+        "print(f\"Is {num1} smaller than {num2}?\")\n",
+        "print(menor)\n",
+        "print(\"\")\n",
+        "print(f\"Is {num1} bigger or equal than {num2}?\")\n",
+        "print(maior_igual)\n",
+        "print(\"\")\n",
+        "print(f\"Is {num1} smaller or equal than {num2}?\")\n",
+        "print(menor_igual)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "8xsEWzH50Jza",
+        "outputId": "49eccfe8-6a20-4eb9-b57c-e4079f1f17f6"
+      },
+      "execution_count": 96,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "________________________________\n",
+            "\n",
+            "Type a number:  8\n",
+            "\n",
+            "Type a new number:  3\n",
+            "\n",
+            "________________________________\n",
+            "\n",
+            "Is 8 equal to 3?\n",
+            "False\n",
+            "\n",
+            "Is 8 different than 3?\n",
+            "True\n",
+            "\n",
+            "Is 8 bigger than 3?\n",
+            "True\n",
+            "\n",
+            "Is 8 smaller than 3?\n",
+            "False\n",
+            "\n",
+            "Is 8 bigger or equal than 3?\n",
+            "True\n",
+            "\n",
+            "Is 8 smaller or equal than 3?\n",
+            "False\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
